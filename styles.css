@@ -92,14 +92,18 @@ label{
   padding: 0;
   margin: 0;
     background-color: rgb(174, 185, 185);
-    height: 609px;
+    height: 629px;
 }
 .descriptionDiv{
-  height: 609px;
+  height: 629px;
     background-color: rgb(179, 135, 219);
+    font-size: 26px;
+    padding-top: 100px;
+    line-height: 1.5;
 }
+
 .workingDiv{
-  height: 609px;
+  height: 629px;
     background-color: rgb(42, 29, 53);
 }
 
@@ -126,6 +130,16 @@ label{
   line-height: 1.5;
 }
 
+.array-row{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+.array-row-child{
+  width : 0.4px;
+  margin-right: 2px;
+  background-color: aqua;
+}
 
 /* --------------------------------Footer Section-------------------------------- */
 .footer{

@@ -25,15 +25,15 @@
                     
                     <div class="slidecontainer">
                         <label for="size" style="color: white;">Size of Array</label>
-                        <input type="range" min="10" max="100" value="1" class="slider" id="myRange">
+                        <input type="range" min="10" max="100" value="10" class="slider" id="myRange">
 
                     </div>
                     
-                    <button class="btn btn-secondary newArray">Generate New Array</button>
+                    <button class="btn btn-secondary newArray" id="newArrayButton">Generate New Array</button>
                     <div class="optionContainer"></div>
                         <label for="algo" style="color: white;" class="algo">Select an Algortihm to Sort</label>
-                        <select name="algorithms" class="dropdown" id="selectAlgo">
-                            <option value="1">Bubble Sort</option>
+                        <select name="algorithms"  class="dropdown" id="selectAlgo">
+                            <option selected='selected' value="1">Bubble Sort</option>
                             <option value="2">Selection Sort</option>
                             <option value="3">Insertion Sort</option>
                             <option value="4">Merge Sort</option>
@@ -48,16 +48,18 @@
     <section>
         <div class="container-fluid mainbody">
             <div class="row">
-                <div class="col-md-3 descriptionDiv">
-                    
+                <div class="col-md-3 descriptionDiv" id="desc">
+                    <p>
+                        1.Bubble Sort  is a Sorting algorithm which uses n-squared approach O(n^2) , It requires n times n passes of the array Where in every pass the comparison between adjacent elements is done in order to bubble out the max element , In Worst Case the time complexity of the bubble sort is O(n^2) 
+                    </p>
                 </div>
                 <div class="col-md-9 workingDiv">
                     <div class="working">
-                        <div class="array-row">
-
+                        <div class="array-row" id="main-block">
+                            
                         </div>
                         <div class="button-row">
-                            <button class="sortButton">SORT</button>
+                            <button class="sortButton" id="sort-button">SORT</button>
                         </div>
                     </div>
                 </div>

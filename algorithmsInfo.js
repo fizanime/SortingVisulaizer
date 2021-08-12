@@ -1,0 +1,7 @@
+var algorithms = [
+   "1.Bubble Sort  is a Sorting algorithm which uses n-squared approach O(n^2) , It requires n times n passes of the array Where in every pass the comparison between adjacent elements is done in order to bubble out the max element , In Worst Case the time complexity of the bubble sort is O(n^2) ",
+   "2.Bubble Sort  is a Sorting algorithm which uses n-squared approach O(n^2) , It requires n times n passes of the array Where in every pass the comparison between adjacent elements is done in order to bubble out the max element , In Worst Case the time complexity of the bubble sort is O(n^2) ",
+   "3.Bubble Sort  is a Sorting algorithm which uses n-squared approach O(n^2) , It requires n times n passes of the array Where in every pass the comparison between adjacent elements is done in order to bubble out the max element , In Worst Case the time complexity of the bubble sort is O(n^2) ",
+   "4.Bubble Sort  is a Sorting algorithm which uses n-squared approach O(n^2) , It requires n times n passes of the array Where in every pass the comparison between adjacent elements is done in order to bubble out the max element , In Worst Case the time complexity of the bubble sort is O(n^2) ",
+   "5.Bubble Sort  is a Sorting algorithm which uses n-squared approach O(n^2) , It requires n times n passes of the array Where in every pass the comparison between adjacent elements is done in order to bubble out the max element , In Worst Case the time complexity of the bubble sort is O(n^2) "
+]
