@@ -68,25 +68,63 @@ var generateRandomArray = (size) => {
 newArrayBtn.addEventListener('click',() => (generateRandomArray(slider.value)))
 
 //================================ Sorting Algorithms ===============================
+function bubbleSort(arr){
+    console.log(arr)
+    
+    for(var i=0;i<arr.length - 1;i++){
+        function innerLoop(){
+            for(var j=0;j<(arr.length-i-1);j++){
+                
+                if(arr[j] > arr[j+1]){
+                    let temp = arr[j]
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp; 
+                }
+                
+            }
+        }
+        setTimeout(innerLoop(),3000)
+        
+    }
+    
+    console.log(arr)
+    
+    emptyParent();
+    
+    arr.forEach(number => {
+        var parentContainer = document.getElementById('main-block')
+        var newElement = document.createElement('div');
+        newElement.setAttribute("style",`height : ${number*5}px`)
+        newElement.className="array-row-child col"
+        newElement.id=`${number}`
+        newElement.innerHTML=`${number}`
+        parentContainer.appendChild(newElement)
+    });
+}
 //===================================================================================
 
 //Button click listener to call particular method to sort the array
 sortButton.addEventListener('click',() => {
 
-    console.log(selectedAlgo)
-
+    bubbleSort(randomArray);
     // if(selectedAlgo === 1){
     //     bubbleSort(randomArray)
+    //     add classes to slidercontainer and new array button and select 
     // }else if(selectedAlgo === 2){
     //     selectionSort(randomArray)
+    //     add classes to slidercontainer and new array button and select
     // }else if(selectedAlgo === 3){
     //     insertionSort(randomArray)
+    //     add classes to slidercontainer and new array button and select
     // }else if(selectedAlgo === 4){
     //     MergeSort(randomArray)
+    //     add classes to slidercontainer and new array button and select
     // }else{
     //     quickSort(randomArray)
+    //     add classes to slidercontainer and new array button and select
     // }
-   
+    
+    //remove the added classes onclick after the array is sorted
 })
     
 
